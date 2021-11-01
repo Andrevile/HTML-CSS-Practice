@@ -9,3 +9,10 @@ GitHub 웹페이지 따라만들기
 3. Google fonts
 4. Reset.css
 ~~~
+
+2.COMMON 설정
+------------
+~~~
+1. 최상위요소, BEM
+2. 전역스타일
+~~~
