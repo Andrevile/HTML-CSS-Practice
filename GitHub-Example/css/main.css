@@ -12,7 +12,7 @@
     background: #eee linear-gradient(to bottom,#fcfcfc,#eee);
     border: 1px solid #d5d5d5;
     border-radius: 4px;
-    display: inline-flex;
+    display: inline-flex; /*글자 크기만큼 알아서 크기가 변경 Text 요소가 되었기 때문에*/
     align-items: center;
     padding: 0 12px;
     font-size: 14px;
@@ -61,3 +61,30 @@
 .input--text::-webkit-input-placeholder {color: #cacaca;} 
 .input--text::-ms-input-placeholder {color: #cacaca;}
 .input--text::-moz-input-placeholder {color: #cacaca;}
+
+
+/* HEADER */
+header {
+    border-bottom: 1px solid rgba(0,0,0,.75);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+    background: #ffffff;
+
+}
+
+header .inner{
+    max-width: 980px;
+    height: 78px;
+    margin: 0 auto;
+}
+
+header .menu-group{
+    display: flex;
+}
+
+header .logo{
+
+}
+
+header .main-menu{
+    display:flex;
+}
