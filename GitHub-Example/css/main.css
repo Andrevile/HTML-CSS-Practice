@@ -5,6 +5,9 @@
     font-weight: 400; /*default*/
     color: #333; /*dark grey*/
 }
+a {
+    text-decoration: none; /*줄을 어디에 그을 건지 설정하는 태그*/
+}
 
 /*BUTTON*/
 .btn{
@@ -20,7 +23,8 @@
     line-height: 1.5; /*행 간격*/
     cursor: pointer; /*마우스 올리면 손가락 모양으로 변경*/
     box-sizing: border-box; /*padding 이나 border-box가 들어갔을 때 크기 변경이 일어나는 것을 방지하는 것*/
-    position: relative; 
+    position: relative;
+    color: #333; 
 }
 
 .btn:hover::before{
@@ -62,29 +66,115 @@
 .input--text::-ms-input-placeholder {color: #cacaca;}
 .input--text::-moz-input-placeholder {color: #cacaca;}
 
+/* FLOAT CLEARFIX */
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+.float--left {
+    float: left;
+}
+.float--right{
+    float: right;
+}
 
 /* HEADER */
 header {
     border-bottom: 1px solid rgba(0,0,0,.75);
     box-shadow: 0 0 5px rgba(0, 0, 0, .75);
     background: #ffffff;
-
 }
 
 header .inner{
     max-width: 980px;
     height: 78px;
-    margin: 0 auto;
+    margin: 0 auto; /*margin 0 auto는 가운데정렬이고, 무조건 가로 사이즈가 정해져있어야 사용가능*/
 }
 
 header .menu-group{
     display: flex;
+    align-items: center;
+    height: 100%;
+    
 }
 
 header .logo{
-
+    margin-right: 10px;
 }
 
+header .logo a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url("../img/logo.svg");
+    text-indent: -9999px;
+    
+}
+
+header .logo a:hover{
+    background: url("../img/logo_on.svg");
+}
 header .main-menu{
-    display:flex;
+    display: flex;
+}
+
+header .main-menu li a {
+    padding: 10px; /*margin이 아니라 padding으로 쓰는경우*/
+    display: block;
+    color: #3c4146;   
+}
+
+header .main-menu li a:hover{
+    color: #4078c0;
+}
+
+header .sign-group {
+    display: flex;
+     /*float속성은 사용하면 붕 뜨게되서 부모요소가 감싸주지 않는 현상 발생*/
+                /*따라서 clearfix라는 클래스를 따로 정의해서 해결*/
+    align-items: center;
+    height: 100%;
+    
+}
+
+header .btn-group{
+    order:2;
+    display: flex;
+}
+
+header .btn-group .sign-in {
+    margin-right: 4px;
+}
+
+#search-form{
+    order: 1;
+    margin-right: 12px;
+}
+
+#search{
+    width: 160px;
+    font-size: 14px;
+}
+
+#search + [type="submit"] {
+    display: none;
+}
+
+header .sub-menu{
+    display: flex;
+    margin-right: 10px;
+}
+
+header .sub-menu li a{
+    padding: 8px;
+    display:block;
+    font-size: 13px;
+    color: #3c4146
+}
+
+
+header .sub-menu li a:hover{
+    color: #4078c0
 }

@@ -29,8 +29,8 @@
     <link rel="icon" href="favicon.png"> <!--아이콘 경로-->
     <link rel="apple-touch-icon" href="favicon.png"> <!--스마트폰 에서도 사용가능 설정-->
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> <!--구글폰트에서 폰트 가져옴-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> <!--reset.css-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> <!--구글폰트에서 폰트 가져옴-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -38,8 +38,8 @@
     
     <!-- HEADER -->
     <header class="section">
-        <div class="inner">
-            <div class="menu-group">
+        <div class="inner clearfix">
+            <div class="menu-group float--left">
                 <div class="logo">
                     <a href="#">GitHub</a>
                 </div>
@@ -50,15 +50,31 @@
                     <li><a href="#">Explore</a></li>
                 </ul>
             </div>
+
+            <div class="sign-group float--right">
+                <div class="btn-group">
+                    <a href="#" class="btn sign-in">Sign in</a>
+                    <a href="#" class="btn btn--primary sign-up">Sign up</a>
+                </div>
+                <form id="search-form" method="POST" action="">
+                    <input type="text" id="search" class="input--text" placeholder="Search GitHub">
+                    <input type="submit" value="Submit">
+                </form>
+                <ul class="sub-menu">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
         </div>
 
     </header>
     <!-- - 일반적인 작명 -->
     <!-- __ ~의 일부분 -->
     <!-- -- ~의 상태 -->
-    <div class="btn">Hello world good job</div>
+    <!-- <div class="btn">Hello world good job</div>
     <div class="btn btn--primary">Primary</div>
-    <input type="text" class="input--text" placeholder="Search GitHub"> <!--힌트 제공-->    
+    <input type="text" class="input--text" placeholder="Search GitHub">
 
 </div>
     
