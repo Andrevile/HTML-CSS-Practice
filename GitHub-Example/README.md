@@ -52,3 +52,18 @@ GitHub 웹페이지 따라만들기
 3. Tiles 반응형 이미지
 4. 4컬럼 스타일
 ~~~
+
+7.Where is
+----------
+~~~
+1. Google Map API
+~~~
+
+8.Pricing
+---------
+~~~
+1. 메뉴링크&Copyright
+2. 좌우 분할
+3. SVG
+~~~
+
