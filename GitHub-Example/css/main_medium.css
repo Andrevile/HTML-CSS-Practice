@@ -61,12 +61,21 @@ header .sub-menu {
   justify-content: center;
 }
 header .toggle {
-  display: none;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: 1s ease-in-out;
 }
 
 header .toggle.on {
-  display: block;
+  /* display: block; */
+  max-height: 0;
+
+  /* width: 500px; */
+  /* transition: 1s; */
 }
+
 #toggle-btn {
   display: block;
 }
