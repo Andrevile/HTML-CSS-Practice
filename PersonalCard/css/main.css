@@ -1,0 +1,28 @@
+.text {
+  text-decoration: none;
+  color: black;
+}
+
+.profile {
+  width: 100px;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 16px;
+  font-family: "nanumsquare";
+  text-align: center;
+}
+
+#special {
+  text-align: center;
+  color: black;
+}
+p {
+  color: blue;
+}
+.content {
+  color: red;
+}
