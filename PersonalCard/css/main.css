@@ -1,3 +1,4 @@
+/* Layout1 */
 .text {
   text-decoration: none;
   color: black;
@@ -114,16 +115,28 @@
 .blog-profile {
   width: 50px;
   float: left;
+  margin-left: 5px;
 }
 
 .blog-name {
   float: left;
 }
 nav {
+  height: 60px;
   background: #eee;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
-.navbar li {
-  display: inline-block;
+.navbar {
+  /* display: inline-block; */
+  /* float: left; */
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* justify-content: center; */
 }
 
 .navbar li a {
@@ -131,10 +144,48 @@ nav {
   color: black;
   font-size: 16px;
   width: 60px;
-  text-align: center;
+  /* text-align: center; */
   padding: 10px;
 }
 
 .navbar li a:hover {
   color: cadetblue;
+}
+
+/* Layout2 */
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/shoes.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  position: relative;
+  padding: 1px;
+}
+
+.main-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main-background .inner {
+  position: relative;
+  padding: 160px 0;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.main-background .inner .main-title {
+  color: #fff;
+  font-size: 40px;
+  /* margin-top: 100px; */
+
+  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75); */
 }
