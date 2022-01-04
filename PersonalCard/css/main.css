@@ -1,9 +1,5 @@
 /* Layout1 */
 
-* {
-  margin: 0;
-  padding: 0;
-}
 .text {
   text-decoration: none;
   color: black;
@@ -321,4 +317,78 @@ nav {
   font-size: 16px;
   border: 1px solid white;
   border-radius: 10px;
+}
+
+/* cart.html */
+
+/* table {
+  border-collapse: collapse;
+} */
+
+.cart-container {
+  background-color: #c2d3de;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin: auto; */
+}
+.cart-container .wow {
+  margin: auto auto;
+  width: 600px;
+  height: auto;
+  padding: 30px;
+}
+.cart-container h1 {
+  color: #015379;
+  margin-bottom: 10px;
+}
+.cart-container tr {
+  text-align: center;
+  border-bottom: 1px solid #c2d3de;
+
+  height: 30px;
+}
+.cart-container td {
+  /* padding: 10px; */
+  /* height: 30px; */
+  display: table-cell;
+  vertical-align: middle;
+
+  /* padding: 5px; */
+}
+.cart-container th {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  /* height: 30px; */
+}
+
+.cart-container table {
+  margin: auto;
+  width: 100%;
+  font-size: 10px;
+  border: 1px solid #8cc1d6;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.edit-cart {
+  text-decoration: underline;
+  color: #015379;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.cart-container .cart-payment-btn {
+  background-color: #015379;
+  border: transparent;
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+  float: right;
+  cursor: pointer;
 }
