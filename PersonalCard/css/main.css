@@ -1,3 +1,8 @@
+@import url("./reset.css");
+
+* {
+  box-sizing: border-box;
+}
 /* Layout1 */
 
 .text {
@@ -126,7 +131,7 @@ nav {
   height: 60px;
   background: #eee;
   border-bottom: 1px solid black;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -154,6 +159,59 @@ nav {
 }
 
 /* Layout2 */
+
+.nav-container {
+  /* position: relative; */
+  height: 60px;
+  background-color: #f7d088;
+  border-bottom: none;
+  /* display: flex; */
+  /* align-items: center; */
+  max-width: 1200px;
+  /* justify-content: flex-end; */
+}
+
+.nav-container::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.nav-container .nav-title {
+  width: 10%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  float: left;
+}
+
+.nav-container .nav-menu-container {
+  float: right;
+  width: 40%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.nav-menu-container .menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.nav-menu-container .menu-list .menu-item {
+  width: 50%;
+  height: inherit;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .main-background {
   width: 100%;
@@ -209,7 +267,6 @@ nav {
 }
 
 /* subBox */
-
 .main-item-sub {
   width: 50%;
   background-color: #e3e3e3;
@@ -391,4 +448,38 @@ nav {
   padding: 10px;
   float: right;
   cursor: pointer;
+}
+
+.responsive_test {
+  max-width: 1200px;
+}
+
+.responsive_test .item-container {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  width: 100%;
+}
+
+.responsive_test .item-container > li {
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 25%;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1100px) {
+  .responsive_test .item-container > li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .responsive_test .item-container > li {
+    width: 100%;
+  }
 }
